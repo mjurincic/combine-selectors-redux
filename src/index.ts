@@ -1,5 +1,6 @@
 import warning from "./warning";
 
+//
 const bindStateToSelector = (prevKey, selector) => (state, ...args) => {
   const targetState = prevKey !== null ? state[prevKey] : state;
   return selector(targetState, ...args);
